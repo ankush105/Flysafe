@@ -1,0 +1,15 @@
+{
+    "AWSEBDockerrunVersion": 1,
+    "Image":{
+        "Name":"ankush3105/flysafe:flysafe-analytics",
+        "Update": "True"
+    },
+    "Ports": [
+        {
+            "ContainerPort":8501,
+            "HostPort":80
+        }
+    ],
+    "Logging":"/var/log/streamlit",
+    "Entrypoint": "./run.sh"
+}
